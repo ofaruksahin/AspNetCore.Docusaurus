@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AspNetCore.Docusaurus.Sample</name>
+    </assembly>
+    <members>
+        <member name="T:AspNetCore.Docusaurus.Sample.Controllers.UserController">
+            <summary>
+            Kullanıcı İşlemlerinden Sorumludur
+            </summary>
+        </member>
+        <member name="F:AspNetCore.Docusaurus.Sample.Controllers.UserController.users">
+            <summary>
+            qwe
+            </summary>
+        </member>
+        <member name="M:AspNetCore.Docusaurus.Sample.Controllers.UserController.Index">
+            <summary>
+            asd
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AspNetCore.Docusaurus.Sample.Controllers.UserController.Get(System.Int32)">
+            <summary>
+            Tekli Kullanıcı Listelemek İçin Kullanılır
+            </summary>
+            <param name="index">Görüntülenmek İstenilen Model</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

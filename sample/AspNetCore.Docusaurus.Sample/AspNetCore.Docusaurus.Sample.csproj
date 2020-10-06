@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projects\AspNetCore.Docusaurus\sample\AspNetCore.Docusaurus.Sample\AspNetCore.Docusaurus.Sample.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AspNetCore.Docusaurus.Core\AspNetCore.Docusaurus.Core.csproj" />
+  </ItemGroup>
+
+
+</Project>
