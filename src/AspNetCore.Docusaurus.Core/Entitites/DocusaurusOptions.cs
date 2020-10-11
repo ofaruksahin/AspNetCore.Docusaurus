@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AspNetCore.Docusaurus.Core.Interfaces;
+using System;
 using System.Reflection;
 
 namespace AspNetCore.Docusaurus.Core.Entitites
@@ -9,6 +10,9 @@ namespace AspNetCore.Docusaurus.Core.Entitites
         private string _documentPath { get; set; }
         private string _mainPage { get; set; }
         private Assembly _projectAssembly { get; set; }
+        private string _xmlFilePath { get; set; }
+
+        private IDocusaurusDocumentWriter _documentWriter { get; set; }
 
         public string DocumentTitle
         {
@@ -63,6 +67,34 @@ namespace AspNetCore.Docusaurus.Core.Entitites
             set
             {
                 _projectAssembly = value;
+            }
+        }
+
+        public string XmlFilePath
+        {
+            get
+            {
+                if (_xmlFilePath == null)
+                    throw new ArgumentNullException(nameof(_xmlFilePath));
+                return _xmlFilePath;
+            }
+            set
+            {
+                _xmlFilePath = value;
+            }
+        }
+
+        public IDocusaurusDocumentWriter DocumentWriter
+        {
+            get
+            {
+                if (_documentWriter == null)
+                    _documentWriter = new  DocusaurusDocumentWriter();
+                return _documentWriter;
+            }
+            set
+            {
+                _documentWriter = value;
             }
         }
     }

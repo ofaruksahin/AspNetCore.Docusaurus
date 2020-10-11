@@ -1,13 +1,15 @@
-﻿using AspNetCore.Docusaurus.Core.Attributes;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace AspNetCore.Docusaurus.Sample.Entities
 {
-    [DocusaurusDescription("Kullanıcılar Bilgisini Tutar.")]
     public class User
     {
-        [DocusaurusDescription("Kullanıcıların Adını Tutar.")]
+        [Description("Kullanıcıların Adını Tutar.")]
         public string Name { get; set; }
-        [DocusaurusDescription("Kullanıcıların Soyadlarını Tutar.")]
+        [Description("Kullanıcıların Soyadlarını Tutar.")]
         public string Surname { get; set; }
+        [Description("Kullanıcı Cihazının Bilgisini Tutar.")]
+        public UserDevice UserDevice { get; set; }
     }
 }

@@ -49,8 +49,14 @@ namespace AspNetCore.Docusaurus.Sample.Controllers
             return new JsonResult(users[index]);
         }
 
+        /// <summary>
+        /// Kullanıcı Güncellemek İçin Kullanılır.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="user"></param>
+        /// <returns></returns>
         [HttpPut("update")]
-        public IActionResult Update(User user)
+        public IActionResult Update(int index,User user)
         {
             return new JsonResult(true);
         }

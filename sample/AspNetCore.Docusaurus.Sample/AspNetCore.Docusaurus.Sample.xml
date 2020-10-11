@@ -27,5 +27,13 @@
             <param name="index">Görüntülenmek İstenilen Model</param>
             <returns></returns>
         </member>
+        <member name="M:AspNetCore.Docusaurus.Sample.Controllers.UserController.Update(System.Int32,AspNetCore.Docusaurus.Sample.Entities.User)">
+            <summary>
+            Kullanıcı Güncellemek İçin Kullanılır.
+            </summary>
+            <param name="index"></param>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>

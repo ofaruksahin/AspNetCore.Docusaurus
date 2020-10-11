@@ -17,7 +17,7 @@ namespace AspNetCore.Docusaurus.Core.Entitites
         }
         public object[] Attributes{ get;private set; }
 
-        public string Description { get; private set; }
+        public string Description { get;  set; }
 
         private List<ActionItem> _actions { get;  set; }        
 
@@ -29,11 +29,6 @@ namespace AspNetCore.Docusaurus.Core.Entitites
 
         private void SetName(string name) => Name = name;
 
-        private void SetAttributes(object[] attributes) => Attributes = attributes;
-
-        private void SetDescription()
-        {
-
-        }
+        private void SetAttributes(object[] attributes) => Attributes = attributes;        
     }
 }

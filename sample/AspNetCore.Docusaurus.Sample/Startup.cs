@@ -25,9 +25,10 @@ namespace AspNetCore.Docusaurus.Sample
             services.AddDocusaurus(new DocusaurusOptions
             {
                 DocumentTitle = "Docusaurus .Net Core API",
-                DocumentPath = "",
-                MainPage = "/docs/docs1.md",
-                ProjectAssembly = Assembly.GetExecutingAssembly()
+                DocumentPath = @"C:\Users\Faruk\Desktop\test",
+                MainPage = "doc1",
+                ProjectAssembly = Assembly.GetExecutingAssembly(),
+                XmlFilePath = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml"
             });
         }
 
