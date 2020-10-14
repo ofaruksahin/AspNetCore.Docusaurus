@@ -10,7 +10,7 @@ namespace AspNetCore.Docusaurus.Core
         {
             IDocusaurusCore docusaurusCore =  (IDocusaurusCore)app.ApplicationServices.GetService(typeof(IDocusaurusCore));
             if (docusaurusCore == null)
-                throw new ArgumentNullException(nameof(docusaurusCore));
+                throw new ArgumentNullException(nameof(docusaurusCore));                
             docusaurusCore.Initialize();
             return app;
         }

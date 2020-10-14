@@ -41,14 +41,22 @@ namespace AspNetCore.Docusaurus.Core.Utils
         public static Doc ParseXml(string xmlContent)
         {
             Doc result = default;
-            XmlRootAttribute xmlRootAttribute = new XmlRootAttribute();
-            xmlRootAttribute.ElementName = "doc";
-            xmlRootAttribute.IsNullable = true;
-            XmlSerializer serializer = new XmlSerializer(typeof(Doc), xmlRootAttribute);
-            using (MemoryStream memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(xmlContent)))
+            try
             {
-                result = (Doc)serializer.Deserialize(memoryStream);
+                XmlRootAttribute xmlRootAttribute = new XmlRootAttribute();
+                xmlRootAttribute.ElementName = "doc";
+                xmlRootAttribute.IsNullable = true;
+                XmlSerializer serializer = new XmlSerializer(typeof(Doc), xmlRootAttribute);
+                using (MemoryStream memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(xmlContent)))
+                {
+                    result = (Doc)serializer.Deserialize(memoryStream);
+                }
             }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+          
             return result;
         }
 
