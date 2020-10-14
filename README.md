@@ -2,7 +2,7 @@
 
 ## Docusaurus Nedir?
 Docusaurus yazılımcıların alt yapı ve tasarım gibi ayrıntılara takılmadan dökümantasyon web sayfalarını kolaylaştırmak için tasarlanmış bir araçtır.
-Aslında projenin yaptığı işlem sizin projenizi docusaurus için uygun markdown formatı haline getirmek. İsterneiz bu markdown dosyalarını kendi isteğinize göre kişiselleştirebilirsiniz.
+Aslında projenin yaptığı işlem sizin projenizi docusaurus için uygun markdown formatı haline getirmek. İsterseniz bu markdown dosyalarını kendi isteğinize göre kişiselleştirebilirsiniz.
 Docusaurus bizim için varsayılan stiller, biçimler ve basit bir navigation ile bir dökümantasyon için ihtiyacımız olan her şeyi sunuyor.
 
 ## Docusaurus Projesinin Çıkış Amacını Kendileri Nasıl Özetlemişler ?
