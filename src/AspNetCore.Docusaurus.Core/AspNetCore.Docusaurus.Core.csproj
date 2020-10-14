@@ -2,12 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Ömer Faruk Şahin</Authors>
+    <Product>AspNetCore.Docusaurus.Core</Product>
+    <Description>Docusaurus facebook tarafından geliştirilmiş bir dökümantasyon aracıdır. Docusaurus ile kendi api dökümantasyonunuzu çok kolay bir şekilde oluşturmasını sağlar.</Description>
+    <PackageProjectUrl>https://github.com/RichWarrior/AspNetCore.Docusaurus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RichWarrior/AspNetCore.Docusaurus</RepositoryUrl>
+    <PackageTags></PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Users\Faruk\Downloads\Compressed\svgtopng\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
